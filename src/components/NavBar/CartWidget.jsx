@@ -1,8 +1,8 @@
-import iconCart from "../../assets/img/iconCart.png"
+import {IoIosCart} from "react-icons/io"
 const CartWidget = () => {
     return(
         <div>
-            <img src={iconCart} width={30} alt="" />
+            <IoIosCart />
             <span>1</span>
         </div>
     )
