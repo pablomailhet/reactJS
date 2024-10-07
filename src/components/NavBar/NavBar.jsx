@@ -1,11 +1,12 @@
 import {Container} from "react-bootstrap"
 import CartWidget from "./CartWidget"
-const NavBar = ({title}) => {
+import "./navbar.css"
+const NavBar = ({brand}) => {
     return(
         <Container fluid as="header">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="navbar-brand">
-                    <h1>{title}</h1>
+                    <h1 className="title">{brand}</h1>
                 </div>
                 <div className="collapse navbar-collapse justify-content-center">
                     <ul className="navbar-nav mr-auto">

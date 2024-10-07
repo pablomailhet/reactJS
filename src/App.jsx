@@ -4,7 +4,7 @@ import "./App.css"
 function App() {
   return (
     <>
-      <NavBar title={"RC Parts"} />
+      <NavBar brand={"RC Parts"} />
       <ItemListConteiner title={"Bienvenido a mi ecommerce."} />
     </>
   )

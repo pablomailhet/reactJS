@@ -1,8 +1,10 @@
 import {IoIosCart} from "react-icons/io"
+import "./cartwidget.css"
+
 const CartWidget = () => {
     return(
         <div>
-            <IoIosCart />
+            <IoIosCart className="cart-icon" />
             <span>1</span>
         </div>
     )
