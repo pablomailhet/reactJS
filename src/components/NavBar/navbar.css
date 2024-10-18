@@ -1,4 +1,8 @@
-.title{
-    color:black;
+.title {
+    color: black;
     font-size: 1.5rem;
+}
+
+.nav-link.active {
+    color: #259d00 !important;
 }

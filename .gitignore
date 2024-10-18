@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 src/components/Ejemplos
+src/hooks
 
 # Editor directories and files
 .vscode/*

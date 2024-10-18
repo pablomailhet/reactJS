@@ -1,0 +1,25 @@
+.cardItem {
+    box-shadow: 2px 2px 2px silver;
+    transition: box-shadow 0.5s;
+}
+
+.cardItem:hover {
+    box-shadow: 5px 5px 15px gray;
+}
+
+.cardItem img {
+    transition: transform 0.5s, filter 1s;
+    animation-name: imgOnStart;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+}
+
+.cardItem:hover img {
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+
+.cardItemImage {
+    height: 150px;
+}

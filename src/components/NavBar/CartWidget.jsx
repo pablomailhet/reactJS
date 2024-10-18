@@ -1,8 +1,8 @@
-import {IoIosCart} from "react-icons/io"
-import "./cartwidget.css"
+import { IoIosCart } from 'react-icons/io'
+import './cartwidget.css'
 
 const CartWidget = () => {
-    return(
+    return (
         <div>
             <IoIosCart className="cart-icon" />
             <span>1</span>
