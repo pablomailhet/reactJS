@@ -8,8 +8,6 @@ import ItemList from './ItemList'
 
 import { getProducts } from '../../data/data.js'
 
-import './itemlistcontainer.css'
-
 const ItemListContainer = ({ title }) => {
 
     const [loading, setLoading] = useState(true)

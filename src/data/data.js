@@ -75,7 +75,8 @@ const products = [
             url: "/img/engines/f40pro.jpg",
             alt: "imagen de un motor para avion a radio control"
         },
-        price: 11.256
+        price: 11.256,
+        stock: 4
     },
     {
         id: 2,
@@ -86,7 +87,8 @@ const products = [
             url: "/img/engines/its2208.jpg",
             alt: "imagen de un motor para avion a radio control"
         },
-        price: 21.159
+        price: 21.159,
+        stock: 3
     },
     {
         id: 3,
@@ -97,7 +99,8 @@ const products = [
             url: "/img/engines/v2207.jpg",
             alt: "imagen de un motor para avion a radio control"
         },
-        price: 31.741
+        price: 31.741,
+        stock: 8
     },
     {
         id: 4,
@@ -108,7 +111,8 @@ const products = [
             url: "/img/engines/v3120.jpg",
             alt: "imagen de un motor para avion a radio control"
         },
-        price: 41.852
+        price: 41.852,
+        stock: 10
     },
     {
         id: 5,
@@ -119,7 +123,8 @@ const products = [
             url: "/img/esc/f35a.jpg",
             alt: "imagen de un motor para avion a radio control"
         },
-        price: 52
+        price: 52,
+        stock: 2
     },
     {
         id: 6,
@@ -130,7 +135,8 @@ const products = [
             url: "/img/esc/f55aproII.jpg",
             alt: "imagen de un motor para avion a radio control"
         },
-        price: 62
+        price: 62,
+        stock: 5
     },
     {
         id: 7,
@@ -141,7 +147,8 @@ const products = [
             url: "/img/esc/f66apro.jpg",
             alt: "imagen de un motor para avion a radio control"
         },
-        price: 72
+        price: 72,
+        stock: 6
     },
     {
         id: 8,
@@ -152,7 +159,8 @@ const products = [
             url: "/img/esc/minif45a.jpg",
             alt: "imagen de un motor para avion a radio control"
         },
-        price: 82
+        price: 82,
+        stock: 1
     },
     {
         id: 9,
@@ -163,7 +171,8 @@ const products = [
             url: "/img/propellers/prop09.jpg",
             alt: ""
         },
-        price: 19.1
+        price: 19.1,
+        stock: 10
     },
     {
         id: 10,
@@ -174,7 +183,8 @@ const products = [
             url: "/img/propellers/prop10.jpg",
             alt: ""
         },
-        price: 15.23
+        price: 15.23,
+        stock: 1
     },
     {
         id: 11,
@@ -185,7 +195,8 @@ const products = [
             url: "/img/propellers/prop11.jpg",
             alt: ""
         },
-        price: 18.2
+        price: 18.2,
+        stock: 6
     },
     {
         id: 12,
@@ -196,7 +207,8 @@ const products = [
             url: "/img/propellers/prop12.jpg",
             alt: ""
         },
-        price: 8.2
+        price: 8.2,
+        stock: 3
     },
     {
         id: 13,
@@ -207,7 +219,8 @@ const products = [
             url: "/img/fc/fc13.jpg",
             alt: ""
         },
-        price: 96.99
+        price: 96.99,
+        stock: 8
     },
     {
         id: 14,
@@ -218,7 +231,8 @@ const products = [
             url: "/img/fc/fc14.jpg",
             alt: ""
         },
-        price: 98.31
+        price: 98.31,
+        stock: 7
     },
     {
         id: 15,
@@ -229,7 +243,8 @@ const products = [
             url: "/img/fc/fc15.jpg",
             alt: ""
         },
-        price: 75.45
+        price: 75.45,
+        stock: 4
     },
     {
         id: 16,
@@ -240,7 +255,8 @@ const products = [
             url: "/img/fc/fc16.jpg",
             alt: ""
         },
-        price: 49.95
+        price: 49.95,
+        stock: 7
     },
     {
         id: 17,
@@ -251,7 +267,8 @@ const products = [
             url: "/img/goggles/gog17.jpg",
             alt: ""
         },
-        price: 199
+        price: 199,
+        stock: 9
     },
     {
         id: 18,
@@ -262,7 +279,8 @@ const products = [
             url: "/img/goggles/gog18.jpg",
             alt: ""
         },
-        price: 499
+        price: 499,
+        stock: 10
     },
     {
         id: 19,
@@ -273,7 +291,8 @@ const products = [
             url: "/img/goggles/gog19.jpg",
             alt: ""
         },
-        price: 459
+        price: 459,
+        stock: 5
     },
     {
         id: 20,
@@ -284,7 +303,8 @@ const products = [
             url: "/img/goggles/gog20.jpg",
             alt: ""
         },
-        price: 59.95
+        price: 59.95,
+        stock: 2
     },
     {
         id: 21,
@@ -295,7 +315,8 @@ const products = [
             url: "/img/vtx/vtx21.jpg",
             alt: ""
         },
-        price: 179
+        price: 179,
+        stock: 6
     },
     {
         id: 22,
@@ -306,7 +327,8 @@ const products = [
             url: "/img/vtx/vtx22.jpg",
             alt: ""
         },
-        price: 49.95
+        price: 49.95,
+        stock: 9
     },
     {
         id: 23,
@@ -317,7 +339,8 @@ const products = [
             url: "/img/vtx/vtx23.jpg",
             alt: ""
         },
-        price: 49.95
+        price: 49.95,
+        stock: 7
     },
     {
         id: 24,
@@ -328,7 +351,8 @@ const products = [
             url: "/img/vtx/vtx24.jpg",
             alt: ""
         },
-        price: 24.95
+        price: 24.95,
+        stock: 8
     },
     {
         id: 25,
@@ -339,7 +363,8 @@ const products = [
             url: "/img/cameras/cam25.jpg",
             alt: ""
         },
-        price: 30.99
+        price: 30.99,
+        stock: 4
     },
     {
         id: 26,
@@ -350,7 +375,8 @@ const products = [
             url: "/img/cameras/cam26.jpg",
             alt: ""
         },
-        price: 34.99
+        price: 34.99,
+        stock: 3
     },
     {
         id: 27,
@@ -361,7 +387,8 @@ const products = [
             url: "/img/cameras/cam27.jpg",
             alt: ""
         },
-        price: 59
+        price: 59,
+        stock: 5
     },
     {
         id: 28,
@@ -372,7 +399,8 @@ const products = [
             url: "/img/cameras/cam28.jpg",
             alt: ""
         },
-        price: 12.99
+        price: 12.99,
+        stock: 2
     },
     {
         id: 29,
@@ -383,7 +411,8 @@ const products = [
             url: "/img/antennas/ant29.jpg",
             alt: ""
         },
-        price: 15.9
+        price: 15.9,
+        stock: 10
     },
     {
         id: 30,
@@ -394,7 +423,8 @@ const products = [
             url: "/img/antennas/ant30.jpg",
             alt: ""
         },
-        price: 37.99
+        price: 37.99,
+        stock: 7
     },
     {
         id: 31,
@@ -405,7 +435,8 @@ const products = [
             url: "/img/antennas/ant31.jpg",
             alt: ""
         },
-        price: 64.95
+        price: 64.95,
+        stock: 3
     },
     {
         id: 32,
@@ -416,7 +447,8 @@ const products = [
             url: "/img/antennas/ant32.jpg",
             alt: ""
         },
-        price: 12.99
+        price: 12.99,
+        stock: 8
     }
 ]
 
@@ -425,7 +457,7 @@ const getCategories = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(categories)
-        }, 500)
+        }, 100)
     })
 }
 
@@ -433,7 +465,7 @@ const getProducts = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(products)
-        }, 1000)
+        }, 250)
     })
 }
 
