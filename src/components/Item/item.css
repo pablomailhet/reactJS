@@ -1,3 +1,11 @@
+.card-title.h5{
+    font-size: 1rem;
+}
+
+.card-text{
+    font-size: 0.8rem;
+}
+
 .cardItem {
     box-shadow: 2px 2px 2px silver;
     transition: box-shadow 0.5s;

@@ -11,9 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
-src/components/Ejemplos
 src/hooks
-src/db
+src/seed
 
 # Editor directories and files
 .vscode/*
@@ -25,3 +24,4 @@ src/db
 *.njsproj
 *.sln
 *.sw?
+*.env

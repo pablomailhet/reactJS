@@ -1,6 +1,24 @@
-h1{
+h1 {
     margin: 0;
 }
-p{
+
+p {
     margin-bottom: 5px;
 }
+
+.toast-container {
+    margin-top: 40px;
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+}
+
+.toast-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+

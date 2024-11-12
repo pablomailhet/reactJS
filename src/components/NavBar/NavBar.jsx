@@ -3,10 +3,12 @@ import { Container } from 'react-bootstrap'
 import { Link, NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
-import { getCategories } from '../../data/data.js'
-
 import CartWidget from './CartWidget'
 import Loading from '../Loading/Loading'
+
+import { collectionCategories } from '../../db/db.js'
+
+import { getDocs } from 'firebase/firestore'
 
 import './navbar.css'
 const NavBar = ({ brand }) => {
@@ -16,16 +18,23 @@ const NavBar = ({ brand }) => {
 
     useEffect(() => {
         setLoading(true)
-        getCategories()
-            .then((data) => {
-                setCategories(data)
-            })
-            .catch((error) => {
 
+        const promiseQuery = getDocs(collectionCategories)
+
+        promiseQuery
+            .then((response) => {
+                const newCategories = response.docs.map(reference => (
+                    { id: reference.id, ...reference.data() }
+                ))
+                setCategories(newCategories)
+            })
+            .catch((err) => {
+                setCategories([])
             })
             .finally(() => {
                 setLoading(false)
             })
+
     }, [])
 
     return (
@@ -41,13 +50,11 @@ const NavBar = ({ brand }) => {
                             :
                             <ul className="navbar-nav mr-auto text-center align-items-center">
                                 {
-                                    categories.map((item, index) => {
-                                        return (
-                                            <li key={index} className="nav-item m-1">
-                                                <NavLink to={`/category/${item.id}`} className="nav-link">{item.name}</NavLink>
-                                            </li>
-                                        )
-                                    })
+                                    categories.map((item, index) => (
+                                        <li key={index} className="nav-item m-1">
+                                            <NavLink to={`/category/${item.tag}`} className="nav-link">{item.name}</NavLink>
+                                        </li>
+                                    ))
                                 }
                             </ul>
                     }

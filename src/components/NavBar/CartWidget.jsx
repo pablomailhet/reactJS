@@ -1,4 +1,4 @@
-import { PiShoppingCartFill, PiShoppingCartLight } from "react-icons/pi";
+import { PiShoppingCartFill, PiShoppingCartLight } from "react-icons/pi"
 
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'

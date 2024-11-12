@@ -2,9 +2,9 @@ import { Row, Col, Button } from "react-bootstrap"
 
 const CartItem = ({ item, formatNumber, changeQuantity, removeItem }) => {
     return (
-        <Row className="mb-1" >
+        <Row className="border border-success rounded p-2 mb-3" >
             <Col className="col col-lg-1 col-md-2">
-                <img src={item.image.url} alt={item.image.alt} className="img-thumbnail" />
+                <img src={item.image.url} alt={item.image.alt} className="img-thumbnail rounded-circle" />
             </Col>
             <Col className="d-flex align-items-center justify-content-start">
                 {item.name}
@@ -22,9 +22,8 @@ const CartItem = ({ item, formatNumber, changeQuantity, removeItem }) => {
                             <Button variant="outline-success" className="btn-sm" onClick={() => changeQuantity(item, "+")}>+</Button>
                         </>
                         :
-                        <>
-                            <span className="mx-2">Last available...</span>
-                        </>
+                        <span className="mx-2">Last available...</span>
+
                 }
             </Col>
             <Col className="d-flex align-items-center justify-content-end">

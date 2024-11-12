@@ -4,31 +4,37 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
 import Loading from '../Loading/Loading'
-import ItemDetail from '../ItemDetail/ItemDetail.jsx'
+import ItemDetail from '../ItemDetail/ItemDetail'
 
-import { getProducts } from '../../data/data.js'
+import { collectionItems } from '../../db/db.js'
+import { doc, getDoc } from "firebase/firestore"
 
 const ItemDetailContainer = () => {
 
     const [loading, setLoading] = useState(true)
-    const [product, setProduct] = useState({})
+    const [item, setItem] = useState(undefined)
     const [error, setError] = useState("")
 
     const { itemId } = useParams()
 
     useEffect(() => {
+
         setLoading(true)
-        getProducts()
-            .then((data) => {
-                const findProduct = data.find((product) => product.id === parseInt(itemId))
-                setProduct(findProduct)
+
+        const documentReference = doc(collectionItems, itemId)
+
+        getDoc(documentReference)
+            .then((response) => {
+                response.exists() ? setItem({ id: response.id, ...response.data() }) : setItem(undefined)
             })
             .catch((err) => {
                 setError(err)
+                setItem(undefined)
             })
             .finally(() => {
                 setLoading(false)
             })
+
     }, [itemId])
 
     return (
@@ -39,15 +45,15 @@ const ItemDetailContainer = () => {
                         <Loading />
                         :
                         error === "" ?
-                            product !== undefined ?
-                                <ItemDetail product={product} />
+                            item !== undefined ?
+                                <ItemDetail item={item} />
                                 :
                                 <Alert variant="warning">
-                                    Producto no encontrado.
+                                    Sorry, the item you are looking for is not available.
                                 </Alert>
                             :
                             <Alert variant="danger">
-                                Error: {error}
+                                Error ({error})
                             </Alert>
                 }
             </Row>

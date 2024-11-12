@@ -6,34 +6,38 @@ import { useParams } from 'react-router-dom'
 import Loading from '../Loading/Loading'
 import ItemList from './ItemList'
 
-import { getProducts } from '../../data/data.js'
+import { collectionItems } from '../../db/db.js'
+import { getDocs, query, where } from 'firebase/firestore'
 
 const ItemListContainer = ({ title }) => {
 
     const [loading, setLoading] = useState(true)
-    const [products, setProducts] = useState([])
+    const [items, setItems] = useState([])
     const [error, setError] = useState("")
 
     const { categoryId } = useParams()
 
     useEffect(() => {
         setLoading(true)
-        getProducts()
-            .then((data) => {
-                if (categoryId) {
-                    const filterProducts = data.filter((product) => product.categoryId === categoryId)
-                    setProducts(filterProducts)
-                }
-                else {
-                    setProducts(data)
-                }
+
+        const promiseQuery = getDocs(categoryId ? query(collectionItems, where("categoryId", "==", categoryId)) : collectionItems)
+
+        promiseQuery
+            .then((response) => {
+                const newItems = response.docs.map(reference => (
+                    { id: reference.id, ...reference.data() }
+                ))
+                setError("")
+                setItems(newItems)
             })
             .catch((err) => {
                 setError(err)
+                setItems([])
             })
             .finally(() => {
                 setLoading(false)
             })
+
     }, [categoryId])
 
     return (
@@ -44,14 +48,14 @@ const ItemListContainer = ({ title }) => {
                         <Loading />
                         :
                         error === "" ?
-                            products.length > 0 ?
+                            items.length > 0 ?
                                 <>
                                     {title && <h2>{title}</h2>}
-                                    <ItemList products={products} />
+                                    <ItemList items={items} />
                                 </>
                                 :
                                 <Alert variant="warning">
-                                    No hay productos para mostrar.
+                                    Sorry, there are no items in this category right now.
                                 </Alert>
                             :
                             <Alert variant="danger">

@@ -4,14 +4,14 @@ const CartContext = createContext()
 
 const CartProvider = ({ children }) => {
 
-    const [items, setItems] = useState([])
+    const [items, setItems] = useState(JSON.parse(localStorage.getItem("cartItems")) || [])
 
     const addItem = (item, quantity) => {
 
         const newItems = [...items]
         const itemIndex = isInCart(item.id)
         if (itemIndex >= 0) {
-            newItems[itemIndex].quantity = quantity
+            newItems[itemIndex].quantity += quantity
             newItems[itemIndex].subtotal = newItems[itemIndex].price * newItems[itemIndex].quantity
         }
         else {
@@ -20,6 +20,7 @@ const CartProvider = ({ children }) => {
             newItem.subtotal = newItem.price * quantity
             newItems.push(newItem)
         }
+        localStorage.setItem("cartItems",JSON.stringify(newItems))
         setItems(newItems)
 
     }
@@ -29,6 +30,7 @@ const CartProvider = ({ children }) => {
         if (itemIndex >= 0) {
             const newItems = [...items]
             newItems.splice(itemIndex, 1)
+            localStorage.setItem("cartItems",JSON.stringify(newItems))
             setItems(newItems)
         }
     }
@@ -48,17 +50,21 @@ const CartProvider = ({ children }) => {
                 }
             }
             newItems[itemIndex].subtotal = newItems[itemIndex].price * newItems[itemIndex].quantity
+            localStorage.setItem("cartItems",JSON.stringify(newItems))
             setItems(newItems)
         }
     }
 
     const isInCart = (id) => items.findIndex(itemCart => itemCart.id === id)
 
-    const clearItems = () => setItems([])
+    const clearItems = () => {
+        localStorage.setItem("cartItems",JSON.stringify([]))
+        setItems([])
+    }
 
     const getQuantityOfItemInCart = (item) => {
         const itemCart = items.find(itemCart => itemCart.id === item.id)
-        return itemCart ? itemCart.quantity : 1
+        return itemCart ? itemCart.quantity : 0
     }
 
     const getQuantityTotal = () => {

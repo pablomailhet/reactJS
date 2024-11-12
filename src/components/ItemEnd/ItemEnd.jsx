@@ -9,10 +9,10 @@ const ItemEnd = () => {
     return (
         <div className="d-flex justify-content-start">
             <div>
-                <Button variant="secondary" size="sm" onClick={() => navigate(-1)}>Seguir comprando</Button>
+                <Button variant="secondary" size="sm" onClick={() => navigate(-1)}>Continue Shopping</Button>
             </div>
             <div className="ms-4">
-                <Button variant="success" size="sm" onClick={() => navigate("/cart")}>Terminar compra</Button>
+                <Button variant="success" size="sm" onClick={() => navigate("/cart")}>Complete Purchase</Button>
             </div>
         </div>
     )
