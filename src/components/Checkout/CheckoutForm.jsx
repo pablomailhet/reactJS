@@ -47,27 +47,27 @@ const CheckoutForm = ({ onSubmit }) => {
 
                 <Form.Group className="mb-3" controlId="fullName">
                     <Form.Label>Full Name</Form.Label>
-                    <Form.Control onChange={handleChange} type="text" required value={buyer.fullName} />
+                    <Form.Control onChange={handleChange} type="text" value={buyer.fullName} />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="email">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control onChange={handleChange} type="email" required value={buyer.email} />
+                    <Form.Control onChange={handleChange} type="text" value={buyer.email} />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="c_email">
                     <Form.Label>Confirm Email</Form.Label>
-                    <Form.Control onChange={handleChange} type="email" required value={buyer.c_email} />
+                    <Form.Control onChange={handleChange} type="text" value={buyer.c_email} />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="phoneNumber">
                     <Form.Label>Phone Number</Form.Label>
-                    <Form.Control onChange={handleChange} type="text" required value={buyer.phoneNumber} />
+                    <Form.Control onChange={handleChange} type="text" value={buyer.phoneNumber} />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="streetAddress">
                     <Form.Label>Street Address</Form.Label>
-                    <Form.Control onChange={handleChange} type="text" required value={buyer.streetAddress} />
+                    <Form.Control onChange={handleChange} type="text" value={buyer.streetAddress} />
                 </Form.Group>
 
                 <Container className="text-center p-1">

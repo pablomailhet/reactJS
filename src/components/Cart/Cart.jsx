@@ -87,7 +87,7 @@ const Cart = () => {
                     <Button variant="outline-danger" size="sm" onClick={handleClickClearItems} >X</Button>
                 </Col>
             </Row>
-            <Row>
+            <Row className="mb-5">
                 <Col>
                     <Link to="/checkout">
                         <Button variant="success">Checkout</Button>

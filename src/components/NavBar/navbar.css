@@ -1,15 +1,23 @@
 .title {
-    color: black;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(237, 237, 237);
+    text-shadow:
+        1.5px 1.5px 0px rgb(39, 161, 57),
+        -1.5px -1.5px 0px rgb(0, 197, 75),
+        1.5px -1.5px 0px rgb(137, 189, 83),
+        -1.5px 1.5px 0px rgb(43, 148, 143);
     margin-bottom: 0px;
-    letter-spacing: -0.15rem;
-    word-spacing: -6px;
+}
+
+.title:hover {
+    color: white;
 }
 
 .nav-link.active {
     color: #259d00 !important;
 }
 
-.nav-link{
+.nav-link {
     font-family: 'Roboto', sans-serif;
 }

@@ -1,15 +1,17 @@
 import { Row, Col, Button } from "react-bootstrap"
 
+import './cartitem.css'
+
 const CartItem = ({ item, formatNumber, changeQuantity, removeItem }) => {
     return (
         <Row className="border border-success rounded p-2 mb-3" >
             <Col className="col col-lg-1 col-md-2">
                 <img src={item.image.url} alt={item.image.alt} className="img-thumbnail rounded-circle" />
             </Col>
-            <Col className="d-flex align-items-center justify-content-start">
+            <Col className="d-flex align-items-center justify-content-start itemText">
                 {item.name}
             </Col>
-            <Col className="d-flex align-items-center justify-content-end">
+            <Col className="d-flex align-items-center justify-content-end itemText">
                 ${formatNumber(item.price)}
             </Col>
             <Col className="d-flex align-items-center justify-content-center">
@@ -18,15 +20,15 @@ const CartItem = ({ item, formatNumber, changeQuantity, removeItem }) => {
                         ?
                         <>
                             <Button variant="outline-success" className="btn-sm" onClick={() => changeQuantity(item, "-")}>-</Button>
-                            <span className="mx-2">{item.quantity}</span>
+                            <span className="mx-2 itemText">{item.quantity}</span>
                             <Button variant="outline-success" className="btn-sm" onClick={() => changeQuantity(item, "+")}>+</Button>
                         </>
                         :
-                        <span className="mx-2">Last available...</span>
+                        <span className="mx-2 itemText">Last available...</span>
 
                 }
             </Col>
-            <Col className="d-flex align-items-center justify-content-end">
+            <Col className="d-flex align-items-center justify-content-end itemText">
                 ${formatNumber(item.subtotal)}
             </Col>
             <Col className="col-1 d-flex align-items-center justify-content-end">

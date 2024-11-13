@@ -29,5 +29,6 @@
 }
 
 .cardItemImage {
-    height: 150px;
+    height: auto;
+    max-height: 120px;
 }

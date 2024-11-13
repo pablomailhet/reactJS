@@ -99,7 +99,7 @@ const Checkout = () => {
                                             </Col>
                                         </Row>
                                     </Container>
-                                    <Container className="border rounded p-2 mb-3">
+                                    <Container className="border rounded p-2 mb-5">
                                         <CheckoutForm onSubmit={onSubmit} />
                                     </Container>
                                 </>

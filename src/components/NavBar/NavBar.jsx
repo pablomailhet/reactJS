@@ -4,7 +4,9 @@ import { Link, NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import CartWidget from './CartWidget'
+
 import Loading from '../Loading/Loading'
+import LoadingSkeleton from '../Loading/LoadingSkeleton'
 
 import { collectionCategories } from '../../db/db.js'
 
@@ -40,14 +42,20 @@ const NavBar = ({ brand }) => {
     return (
         <Container fluid as="header">
             <nav className="navbar navbar-expand-lg">
+
                 <Link to="/" className="navbar-brand">
                     <h1 className="title">{brand}</h1>
                 </Link>
-                <div className="collapse navbar-collapse justify-content-center">
+
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarApp" aria-controls="navbarApp" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div className="collapse navbar-collapse justify-content-center" id="navbarApp">
                     {
                         loading
                             ?
-                            <Loading />
+                            <LoadingSkeleton />
                             :
                             <ul className="navbar-nav mr-auto text-center align-items-center">
                                 {
@@ -60,8 +68,11 @@ const NavBar = ({ brand }) => {
                             </ul>
                     }
                 </div>
+
                 <CartWidget />
+
             </nav>
+            
         </Container >
     )
 }

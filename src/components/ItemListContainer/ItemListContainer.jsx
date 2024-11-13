@@ -42,10 +42,12 @@ const ItemListContainer = ({ title }) => {
 
     return (
         <Container className="text-center p-3" as="main">
-            <Row className="justify-content-center">
+            <Row className="justify-content-center mb-5">
                 {
                     loading === true ?
-                        <Loading />
+                        <div>
+                            <Loading />
+                        </div>
                         :
                         error === "" ?
                             items.length > 0 ?
