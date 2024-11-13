@@ -1,6 +1,34 @@
 import { object, string, ref } from "yup"
 
 let userSchema = object({
+    country: string()
+        .required('Please enter your country.')
+        .matches(
+            /^[a-zA-ZÀ-ÿ\s]+$/,
+            'Country must contain only letters and spaces.'
+        )
+        .min(3, 'Country must be at least 3 characters.')
+        .max(25, 'Country must not exceed 25 characters.'),    
+    postalCode: string()
+        .required('Please enter your postal code.')
+        .min(3, 'Postal code must be at least 3 characters.')
+        .max(10, 'Postal code must not exceed 10 characters.'),    
+    state: string()
+        .required('Please enter your state.')
+        .matches(
+            /^[a-zA-ZÀ-ÿ\s]+$/,
+            'State must contain only letters and spaces.'
+        )
+        .min(3, 'State must be at least 3 characters.')
+        .max(50, 'State must not exceed 50 characters.'),
+    city: string()
+        .required('Please enter your city.')
+        .matches(
+            /^[a-zA-ZÀ-ÿ\s]+$/,
+            'City must contain only letters and spaces.'
+        )
+        .min(3, 'City must be at least 3 characters.')
+        .max(50, 'City must not exceed 50 characters.'),
     streetAddress: string()
         .required('Please enter your street address.')
         .min(5, 'Full name must be at least 5 characters.')

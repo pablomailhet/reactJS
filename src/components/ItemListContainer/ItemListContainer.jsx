@@ -44,13 +44,13 @@ const ItemListContainer = ({ title }) => {
         <Container className="text-center p-3" as="main">
             <Row className="justify-content-center mb-5">
                 {
-                    loading === true ?
-                        <div>
-                            <Loading />
-                        </div>
+                    loading
+                        ?
+                        <Loading />
                         :
                         error === "" ?
-                            items.length > 0 ?
+                            items.length > 0
+                                ?
                                 <>
                                     {title && <h2>{title}</h2>}
                                     <ItemList items={items} />

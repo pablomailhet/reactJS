@@ -18,14 +18,12 @@ const ItemDetail = ({ item }) => {
 
     const onAdd = (quantityToAdd) => {
         addItem(item, quantityToAdd)
-
         toast.info(
             <div className="toast-content">
                 <img src={item.image.url} alt={item.image.alt} className="toast-avatar" />
                 <span>{item.name} has been added to your cart.</span>
             </div>
             , { icon: false })
-
         setShowItemCount(false)
     }
 
