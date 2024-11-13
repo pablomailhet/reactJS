@@ -1,6 +1,6 @@
 # RcParts - Ecommerce Demo
 
-**RcParts** es una tienda de demostración en línea para la venta de productos de radio control. Este proyecto está desarrollado en **ReactJS** y utiliza diversas dependencias modernas para una experiencia de usuario fluida y profesional.
+**RcParts** es una tienda de demostración en línea para la venta de productos de modelos a radio control. Este proyecto está desarrollado en **ReactJS** y utiliza diversas dependencias modernas para una experiencia de usuario fluida y profesional.
 
 ## Índice
 
@@ -12,12 +12,11 @@
 
 ## Descripción
 
-Este proyecto es una **demo** de un ecommerce que ofrece una variedad de productos para **radio control**, como autos, drones, y accesorios relacionados. La tienda incluye funcionalidades básicas como:
+Este proyecto es una **demo** de un ecommerce que ofrece una variedad de productos para **radio controlados**, como autos, drones, y accesorios relacionados. La tienda incluye funcionalidades básicas como:
 
 - Vista de productos
 - Carrito de compras
-- Procesamiento de pagos simulado (sin integración real)
-- Autenticación y gestión de usuarios con Firebase
+- Checkout
 - Notificaciones y alertas con **React-Toastify** y **SweetAlert2**
 
 El objetivo de este proyecto es mostrar una posible implementación de una tienda online utilizando **ReactJS** con varias herramientas y bibliotecas para mejorar la experiencia del usuario.
@@ -56,8 +55,8 @@ Para comenzar a usar este proyecto, sigue estos pasos:
 
 3. **Configura Firebase**:
 
-   Para usar la base de datos de Firebase, necesitarás crear el archivo .env con los siguientes key:
-
+    Para usar la base de datos de Firebase, necesitarás crear el archivo `.env` con las siguientes claves. Los valores serán proporcionados por el desarrollador:
+    
     - `VITE_API_KEY`
     - `VITE_AUTH_DOMAIN`
     - `VITE_PROJECT_ID`
@@ -73,7 +72,7 @@ Para comenzar a usar este proyecto, sigue estos pasos:
    npm run dev
    ```
 
-   La aplicación se ejecutará de forma local en `http://localhost:5173/` y de forma remote en `https://pm-reactjs.vercel.app/`.
+   La aplicación se ejecutará de forma local en `http://localhost:5173/` y de forma remote en `https://pm-reactjs.vercel.app/`
 
 ## Uso
 
