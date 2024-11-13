@@ -73,7 +73,7 @@ Para comenzar a usar este proyecto, sigue estos pasos:
    npm run dev
    ```
 
-   La aplicación se ejecutará en `http://localhost:5173/`.
+   La aplicación se ejecutará de forma local en `http://localhost:5173/` y de forma remote en `https://pm-reactjs.vercel.app/`.
 
 ## Uso
 
