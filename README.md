@@ -30,6 +30,7 @@ El objetivo de este proyecto es mostrar una posible implementación de una tiend
 - **React Router**: Enrutamiento dinámico para navegación entre vistas.
 - **React-Icons**: Biblioteca de iconos para React.
 - **React-Spinners**: Indicadores de carga animados.
+- **React-Loading-Skeleton**: Indicadores de carga animados.
 - **React-Toastify**: Notificaciones para mostrar mensajes en la interfaz de usuario.
 - **SweetAlert2**: Ventanas emergentes personalizadas para alertas.
 - **Yup**: Biblioteca para validación de formularios.
@@ -93,6 +94,7 @@ El proyecto utiliza las siguientes dependencias:
   "react-bootstrap": "^2.10.5",       // Componentes de Bootstrap para React
   "react-dom": "^18.3.1",             // Módulo de React para manipular el DOM
   "react-icons": "^5.3.0",            // Iconos para React
+  "react-loading-skeleton": "^3.5.0", // Indicadores de carga animados
   "react-router-dom": "^6.27.0",      // Enrutamiento para React
   "react-spinners": "^0.14.1",        // Indicadores de carga animados
   "react-toastify": "^10.0.6",        // Notificaciones en la UI
