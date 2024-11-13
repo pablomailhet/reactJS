@@ -45,7 +45,8 @@ const NavBar = ({ brand }) => {
                 </Link>
                 <div className="collapse navbar-collapse justify-content-center">
                     {
-                        loading === true ?
+                        loading
+                            ?
                             <Loading />
                             :
                             <ul className="navbar-nav mr-auto text-center align-items-center">

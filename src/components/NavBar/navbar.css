@@ -1,8 +1,15 @@
 .title {
     color: black;
     font-size: 1.5rem;
+    margin-bottom: 0px;
+    letter-spacing: -0.15rem;
+    word-spacing: -6px;
 }
 
 .nav-link.active {
     color: #259d00 !important;
+}
+
+.nav-link{
+    font-family: 'Roboto', sans-serif;
 }

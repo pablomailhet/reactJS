@@ -27,7 +27,8 @@ const CheckoutForm = ({ onSubmit }) => {
         fullName: "",
         email: "",
         c_email: "",
-        phoneNumber: ""
+        phoneNumber: "",
+        streetAddress: ""
     })
 
     const handleSubmit = (e) => {
@@ -64,8 +65,13 @@ const CheckoutForm = ({ onSubmit }) => {
                     <Form.Control onChange={handleChange} type="text" required value={buyer.phoneNumber} />
                 </Form.Group>
 
+                <Form.Group className="mb-3" controlId="streetAddress">
+                    <Form.Label>Street Address</Form.Label>
+                    <Form.Control onChange={handleChange} type="text" required value={buyer.streetAddress} />
+                </Form.Group>
+
                 <Container className="text-center p-1">
-                    <Button variant="primary" type="submit">Confirm Checkout</Button>
+                    <Button variant="success" type="submit">Confirm Checkout</Button>
                 </Container>
 
             </Form>

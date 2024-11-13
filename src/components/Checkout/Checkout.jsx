@@ -35,17 +35,6 @@ const Checkout = () => {
 
             const { c_email, ...newBuyer } = buyer
 
-            /*const newItems = items.map((item) => (
-                {
-                        id: item.id, 
-                        title: item.title,
-                        price: item.price,
-                        quantity: item.quantity,
-                        subtotal: item.subtotal
-                }
-            ))
-            */
-
             const order = {
                 buyer: { ...newBuyer },
                 items: [...items],
@@ -120,7 +109,7 @@ const Checkout = () => {
                             <Alert className="text-center" variant="success">
                                 <p>Thank you for your purchase!</p>
                                 <p>Your order number is: <span className="fw-bold">{idOrder}</span></p>
-                                <p>You will receive an email shortly with the details of your order.</p>
+                                <p>You will receive an email shortly with the details of your order and a link to complete your payment.</p>
                                 <Link to="/">
                                     <Button variant="success">Continue Shopping</Button>
                                 </Link>
