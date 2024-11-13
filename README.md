@@ -55,7 +55,7 @@ Para comenzar a usar este proyecto, sigue estos pasos:
 
 3. **Configura Firebase**:
 
-    Para usar la base de datos de Firebase, necesitarás crear el archivo `.env` con las siguientes claves. Los valores serán proporcionados por el desarrollador:
+    Para usar la base de datos de Firebase, necesitarás crear el archivo `.env` en la raiz del proyecto con las siguientes claves. Los valores serán proporcionados por el desarrollador:
     
     - `VITE_API_KEY`
     - `VITE_AUTH_DOMAIN`
