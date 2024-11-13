@@ -16,7 +16,7 @@ function App() {
     return (
         <BrowserRouter>
             <CartProvider>
-                <NavBar brand={"RC Parts"} />
+                <NavBar brand={"RCParts"} />
                 <ToastContainer 
                     theme="dark" 
                     autoClose={1500} 
