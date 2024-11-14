@@ -61,7 +61,7 @@ const NavBar = ({ brand }) => {
                                 {
                                     categories.map((item, index) => (
                                         <li key={index} className="nav-item m-1">
-                                            <NavLink to={`/category/${item.tag}`} className="nav-link">{item.name}</NavLink>
+                                            <NavLink to={`/categories/${item.tag}`} className="nav-link p-1">{item.name}</NavLink>
                                         </li>
                                     ))
                                 }

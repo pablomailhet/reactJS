@@ -29,7 +29,7 @@ function App() {
                 <NavBar brand={"RCParts"} />
                 <Routes>
                     <Route path="/" element={<ItemListContainer title="All Items" />} />
-                    <Route path="/category/:categoryId" element={<ItemListContainer title="" />} />
+                    <Route path="/categories/:categoryId" element={<ItemListContainer title="" />} />
                     <Route path="/item/:itemId" element={<ItemDetailContainer />} />
                     <Route path="/cart" element={<Cart />} />
                     <Route path="/checkout" element={<Checkout />} />

@@ -4,25 +4,34 @@ footer {
     bottom: 0px;
     transition: filter 0.5s;
     background: radial-gradient(circle at 50.3% 44.5%, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 100.2%);
-  }
-
-footer i {
-    padding: 10px;
-    color: #202020;
-    font-size: 1.5rem;
-    transition: color 0.5s;
 }
 
-footer i:hover.facebook {
+.faFacebook {
+    padding: 5px;
+    color: #202020;
+    font-size: 2.3rem;
+    transition: color 0.5s;
+}
+.faFacebook:hover {
     color: #3b5998;
 }
 
-footer i:hover.instagram {
-    background: -webkit-linear-gradient(#833ab4, #fd1d1d, #fcb045);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.faInstagram {
+    padding: 5px;
+    color: #202020;
+    font-size: 2.3rem;
+    transition: color 0.5s;
+}
+.faInstagram:hover {
+    color: #833ab4;
 }
 
-footer i:hover.whatsapp {
+.faWhatsapp {
+    padding: 5px;
+    color: #202020;
+    font-size: 2.3rem;
+    transition: color 0.5s;
+}
+.faWhatsapp:hover {
     color: green;
 }

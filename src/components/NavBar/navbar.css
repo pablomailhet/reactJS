@@ -19,5 +19,6 @@
 }
 
 .nav-link {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+    letter-spacing: 0.8px;
 }

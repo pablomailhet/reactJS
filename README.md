@@ -23,17 +23,17 @@ El objetivo de este proyecto es mostrar una posible implementación de una tiend
 
 ## Tecnologías utilizadas
 
-- **ReactJS**: Biblioteca de JavaScript para construir interfaces de usuario.
-- **Bootstrap 5**: Framework de CSS para diseñar interfaces responsivas y modernas.
-- **Firebase**: Plataforma para autenticación y base de datos en tiempo real.
-- **React-Bootstrap**: Componentes de Bootstrap para React.
-- **React Router**: Enrutamiento dinámico para navegación entre vistas.
-- **React-Icons**: Biblioteca de iconos para React.
-- **React-Spinners**: Indicadores de carga animados.
-- **React-Loading-Skeleton**: Indicadores de carga animados.
-- **React-Toastify**: Notificaciones para mostrar mensajes en la interfaz de usuario.
-- **SweetAlert2**: Ventanas emergentes personalizadas para alertas.
-- **Yup**: Biblioteca para validación de formularios.
+- **[ReactJS](https://reactjs.org/)**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **[Bootstrap 5](https://getbootstrap.com/)**: Framework de CSS para diseñar interfaces responsivas y modernas.
+- **[Firebase](https://firebase.google.com/)**: Plataforma para autenticación y base de datos en tiempo real.
+- **[React-Bootstrap](https://react-bootstrap.github.io/)**: Componentes de Bootstrap para React.
+- **[React Router](https://reactrouter.com/)**: Enrutamiento dinámico para navegación entre vistas.
+- **[React-Icons](https://react-icons.github.io/react-icons/)**: Biblioteca de iconos para React.
+- **[React-Loading-Skeleton](https://www.npmjs.com/package/react-loading-skeleton)**: Indicadores de carga animados. (utilizado en los links del navbar)
+- **[React-Spinners](https://www.npmjs.com/package/react-spinners)**: Indicadores de carga animados. (utilizado en la vista mientras se carga los productos)
+- **[React-Toastify](https://fkhadra.github.io/react-toastify/)**: Notificaciones para mostrar mensajes en la interfaz de usuario. (utilizado cuando se agrega, quita o vacía los productos del carrito)
+- **[SweetAlert2](https://sweetalert2.github.io/)**: Ventanas emergentes personalizadas para alertas. (utilizado para recibir confirmación de parte del usuario cuando se quita o vacía el carrito)
+- **[Yup](https://github.com/jquense/yup)**: Biblioteca para validación de formularios. (utilizado para validar el formulario checkout)
 
 ## Instalación
 
