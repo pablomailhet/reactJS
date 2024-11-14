@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react'
 
 import CartWidget from './CartWidget'
 
-import Loading from '../Loading/Loading'
 import LoadingSkeleton from '../Loading/LoadingSkeleton'
 
 import { collectionCategories } from '../../db/db.js'
@@ -40,7 +39,7 @@ const NavBar = ({ brand }) => {
     }, [])
 
     return (
-        <Container fluid as="header">
+        <Container fluid as="header" className='header'>
             <nav className="navbar navbar-expand-lg">
 
                 <Link to="/" className="navbar-brand">
@@ -72,7 +71,7 @@ const NavBar = ({ brand }) => {
                 <CartWidget />
 
             </nav>
-            
+
         </Container >
     )
 }
