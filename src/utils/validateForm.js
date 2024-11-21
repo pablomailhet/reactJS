@@ -31,8 +31,8 @@ let userSchema = object({
         .max(50, 'City must not exceed 50 characters.'),
     streetAddress: string()
         .required('Please enter your street address.')
-        .min(5, 'Full name must be at least 5 characters.')
-        .max(50, 'Full name must not exceed 50 characters.'),
+        .min(5, 'Street address must be at least 5 characters.')
+        .max(50, 'Street address must not exceed 50 characters.'),
     phoneNumber: string()
         .required('Please provide your phone number.')
         .matches(
