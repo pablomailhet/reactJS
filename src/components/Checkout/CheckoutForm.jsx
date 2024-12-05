@@ -39,13 +39,13 @@ const CheckoutForm = ({ onSubmit }) => {
                     <Col md={6}>
                         <Form.Group className="mb-3" controlId="email">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control onChange={handleChange} type="text" value={buyer.email} />
+                            <Form.Control onChange={handleChange} type="email" value={buyer.email} />
                         </Form.Group>
                     </Col>
                     <Col md={6}>
                         <Form.Group className="mb-3" controlId="c_email">
                             <Form.Label>Confirm Email</Form.Label>
-                            <Form.Control onChange={handleChange} type="text" value={buyer.c_email} />
+                            <Form.Control onChange={handleChange} type="email" value={buyer.c_email} />
                         </Form.Group>
                     </Col>
                 </Row>
